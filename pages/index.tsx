@@ -1,25 +1,29 @@
-import React, { useState } from 'react'
-import Nav from '@/Components/Nav'
-import MobileNav from '@/Components/MobileNav'
-import Hero from '@/Components/Hero'
+import React, { useState } from "react";
+import Nav from "@/Components/Nav";
+import MobileNav from "@/Components/MobileNav";
+import Hero from "@/Components/Hero";
+import About from "@/Components/About";
 
 const HomePage = () => {
-  const [nav, setNav] = useState(false)
-  const openNav = () => setNav(true)
-  const closeNav = () => setNav(false)
+  const [nav, setNav] = useState(false);
+  const openNav = () => setNav(true);
+  const closeNav = () => setNav(false);
   return (
-    <div className='overflow-x-hidden'>
+    <div className="overflow-x-hidden">
       <div>
         {/* Navbar Section */}
-        <MobileNav nav={nav} closeNav={closeNav}/>
-        <Nav openNav={openNav}/>
+        <MobileNav nav={nav} closeNav={closeNav} />
+        <Nav openNav={openNav} />
 
         {/* Hero Section */}
-        <Hero/>
+        <Hero />
+        <div>
+          {/* About Section */}
+          <About />
+        </div>
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
