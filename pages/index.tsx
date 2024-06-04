@@ -6,6 +6,7 @@ import About from "@/Components/About";
 import Service from "@/Components/Service";
 import Skills from "@/Components/Skills";
 import Contacts from "@/Components/Contacts";
+import Portfolio from "@/Components/Portfolio";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -28,6 +29,11 @@ const HomePage = () => {
           {/* Skills */}
           {/* <Skills/> */}
           <Contacts/>
+
+          <Skills/>
+
+          <Portfolio/>
+          
         </div>
       </div>
     </div>
